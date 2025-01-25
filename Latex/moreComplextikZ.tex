@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage{tikz,pgfplots}
+\usetikzlibrary{positioning}
+\begin{document}
+	\begin{tikzpicture}[ gren/.style = {rectangle, draw=black!100, fill=green!10, very thick, minimum size=4mm} , bluee/.style={rectangle, draw=black!100,fill=blue!10, very thick, minimum size=5mm}, whitee/.style={rectangle, draw=black!100, fill=white, very thick, minimum size=4mm},
+		]
+	
+	
+\node [gren] (a) [draw] {5};
+\node [bluee] (b) [right= .01cm of  a]{2};
+\node[whitee] (c) [right=.01 of b]{4};
+	\node[whitee] (d) [right=.01 of c]{4};
+	\node[whitee] (e) [right=.01 of d]{4};
+	\node[whitee] (f) [right=.01 of e]{4};
+	
+	
+	
+	
+	
+	
+	
+	
+	\end{tikzpicture}
+\end{document}
